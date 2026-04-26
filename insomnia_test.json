@@ -1,0 +1,168 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: School
+meta:
+  id: wrk_7a9634ed14874c0b9f7205bda8b555a1
+  created: 1747142122329
+  modified: 1747142122329
+  description: ""
+collection:
+  - url: http://localhost:3000/shoppingList/get/69ee2fe15b37e7ae92f99cb3?userId=alex
+    name: shoppingList/get
+    meta:
+      id: req_d0211dbb1ecd484c975316fe93067dcb
+      created: 1747142139883
+      modified: 1777217671915
+      isPrivate: false
+      description: ""
+      sortKey: -1777217266663
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/create
+    name: shoppingList/create
+    meta:
+      id: req_896085b0f5b8453c8a4a2e0b798368ab
+      created: 1777217045566
+      modified: 1777217577352
+      isPrivate: false
+      description: ""
+      sortKey: -1777217266738
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Tesco nákup",
+          "ownerId": "alex"
+        }
+    parameters:
+      - name: shoppingList/create
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/list?userId=alex
+    name: shoppingList/list
+    meta:
+      id: req_eb4e2bcd98434cbeb19f103060a56d46
+      created: 1777217157521
+      modified: 1777217626997
+      isPrivate: false
+      description: ""
+      sortKey: -1777217266688
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/update
+    name: shoppingList/update
+    meta:
+      id: req_ac7380c98fc04ecaba85ff4a7c4ae585
+      created: 1777217199441
+      modified: 1777217702031
+      isPrivate: false
+      description: ""
+      sortKey: -1777217266650.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": "69ee2fe15b37e7ae92f99cb3",
+          "name": "Lidl nákup",
+          "userId": "alex"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/delete
+    name: shoppingList/delete
+    meta:
+      id: req_000a0272891c4f8c90acfdeccdb9d71e
+      created: 1777217266638
+      modified: 1777217742438
+      isPrivate: false
+      description: ""
+      sortKey: -1777217266638
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": "69ee2fe15b37e7ae92f99cb3",
+          "userId": "alex"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_a70fb7325932f67de36e83d4380908a164b8c23d
+    created: 1747142122333
+    modified: 1747142122333
+environments:
+  name: Base Environment
+  meta:
+    id: env_a70fb7325932f67de36e83d4380908a164b8c23d
+    created: 1747142122331
+    modified: 1747142122331
+    isPrivate: false
